@@ -7,13 +7,12 @@
 
 <% @latest_products.each do |product| %>
   <div class="column">
-    <img class="thumbnail" src="http://lorempixel.com/300/400/fashion">
+    <%= image_tag product.image.url(:main), class: 'thumbnail' %>
     <h5><%= product.name %></h5>
     <p><%= product.price %></p>
     <a href="#" class="button expanded">Buy</a>
   </div>
 <% end %>
-
 
 </div>
 
@@ -32,7 +31,7 @@
 
   <% @sale_products.each do |product| %>
     <div class="column">
-    <img class="thumbnail" src="http://placehold.it/300x400">
+    <%= image_tag product.image.url(:medium), class: 'thumbnail' %>
     <h5><%= product.name %></h5>
     <p><%= product.price %></p>
     <a href="#" class="button small expanded hollow">Buy</a>
