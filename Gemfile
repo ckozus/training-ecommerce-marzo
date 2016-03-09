@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'foundation-rails'
 gem 'paperclip'
+gem 'aws-sdk-v1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
